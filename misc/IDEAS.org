@@ -1,0 +1,40 @@
+#+title:Ideas for feature additions 
+* Working group
+  The initiator of an idea is added to a working group. He can then choose to add other users to the group, based on them reaching out/ him looking for help. This group will allow developers of the idea to communicate internally, as well as post updates on fund status.
+* Idea log tree
+  This will track the progress of an idea, showing the different points at which a change was made to the original idea, along with credits to the suggester if any. It helps make the project feel more inclusive and the backers feel more involved.
+* User/backer interaction
+  Comments can be separated into suggestions, concerns and questions. Suggestions are for the idea's creator to add features to their idea. Concerns are for backers to express their concerns about the project not meeting its deadline, not following the idea etc. Questions are for the backers to get to know the idea better, by interacting with the founder. A "report" button can be added to allow review of ideas which appear fraudulent/violate guidelines
+* Project stages 
+  Projects/ideas which require large funding is to be divided into stages, where each stage is eligible for a certain amunt of funding. This ensures that the creators are following a deadline, and the backers have a way of tracking the project's progress. The creators also do not have the pressure of completing the project with partial backing.
+* (Marketing) Our niche is local products
+  There are quite a few sites for crowdfunding, but none are targeted towards local products. The few in India are mostly for personal causes or charities. Our project hopes to bring out clever ideas to solve everyday problems, and help bring them to reality
+* What does the creator need to add?
+  - Needs to add idea, with a clear goal (what defines completion of the idea?) and category
+  - A rewards system for users who contribute (token products such as branded merchandise)
+  - """Maybe have a separate resources page for pics, videos, schematics etc"""
+  - Fill in details about their experience in related projects, and in crowdfunded projects in general
+  - Details about the possible risks/difficulties that might be faced during implementation
+  - Decide whether he wants funding, or only wants user input for improvement (can be a testing ground, to see if people like the product before trying to make it)
+  - Depending on the amount of funding asked for, divide into stages, with clear milestones for each
+    This will enable backers to evaluate if the idea is worth funding, and how successful it might be
+* Ratings
+  - Ratings for ideas based on how much people like them (usefulness)
+  - Ratings for products based on responsiveness (how active is the creator/group, how well do they keep to deadlines)
+  - Ratings for creators based on the performance of all their ideas
+  - Ratings for users based on how many suggestions have been implemented in others' ideas
+* Metrics
+  - Site traffic
+  - Number of ideas
+  - Number of backers
+  - Number of successfully backed ideas
+  - Average funding per backer
+  - Model successful idea (based on stages, amount of funding, how liked it is etc)
+  - All these metrics for each category
+* Advertising (far future)
+  - Tie ups with other media companies to feature popular ideas
+  - Have links for idea creators to directly approach media, as well as get featured through the platform
+* Static pages
+  - Apart from about and contact, have pages on guidelines for creators, guidelines for users, a how-to section, and pages for success/failure of payment
+  - Guideline pages should have rules about valid ideas, valid comments and valid rewards
+
