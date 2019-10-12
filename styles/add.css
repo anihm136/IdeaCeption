@@ -1,0 +1,12 @@
+@import url("index.css");
+
+div#input {
+    width: 50%;
+    float: left;
+}
+
+div#view{
+    width: 50%;
+    background-color: #aaaaaa;
+    float: left;
+}
