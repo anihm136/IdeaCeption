@@ -1,0 +1,59 @@
+@import url("normalize.css");
+
+header {
+    margin-top: 20px;
+    height: 100px;
+    background: #424242;
+    padding-left: 45%;
+    line-height: 100px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+}
+
+div#corner {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #212121;
+    clip-path: polygon(
+    0 0,
+    100% 0,
+    0 100%
+  );
+}
+
+div#corner > img {
+    position: relative;
+    top: calc(0.33*100%);
+    left: calc(0.22*100%);
+    transform: translate(-50%, -50%);
+}
+
+div#corner-border {
+    position: absolute;
+    height: calc(40% + 5px);
+    width: calc(40% + 5px);
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #80CBC4;
+    clip-path: polygon(
+    0 0,
+    100% 0,
+    0 100%
+  );
+}
+
+footer {
+    clear: both;
+    margin-top: 250px;
+    padding: 30px;
+    text-align: center;
+    background-color: #212121;
+    color: #EEEEEE;
+}
