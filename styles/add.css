@@ -1,12 +1,27 @@
 @import url("index.css");
 
-div#input {
-    width: 50%;
+html,body {
+    height: 100%;
+}
+
+div#main_body {
+    display: flex;
+    height: 100%;
+}
+
+textarea#input {
+    margin: 5px;
+    flex: 1;
     float: left;
 }
 
-div#view{
-    width: 50%;
+div#view {
+    margin: 5px;
+    flex: 1;
     background-color: #aaaaaa;
     float: left;
+}
+
+footer {
+    margin-top: 50px;
 }
