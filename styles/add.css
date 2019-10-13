@@ -1,16 +1,21 @@
-@import url("index.css");
-
-html,body {
-    height: 100%;
-}
+@import url("common.css");
 
 div#main_body {
     display: flex;
-    height: 100%;
+    align-items: stretch;
+}
+
+#add .add a {
+    color: #80CBC4;
+    font-size: 24px;
+    pointer-events: none;
+    cursor: default;
 }
 
 textarea#input {
+    resize: none;
     margin: 5px;
+    padding: 0;
     flex: 1;
     float: left;
 }
@@ -24,4 +29,5 @@ div#view {
 
 footer {
     margin-top: 50px;
+    margin-left: 200px;
 }

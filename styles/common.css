@@ -1,5 +1,13 @@
 @import url("normalize.css");
 
+html {
+    height: 100vh;
+}
+
+body {
+    height: inherit;
+}
+
 header {
     margin-top: 20px;
     height: 100px;
@@ -14,8 +22,8 @@ header {
 
 div#corner {
     position: absolute;
-    height: 40%;
-    width: 40%;
+    height: 235px;
+    width: 480px;
     top: 0;
     left: 0;
     right: 0;
@@ -36,8 +44,8 @@ div#corner > img {
 
 div#corner-border {
     position: absolute;
-    height: calc(40% + 5px);
-    width: calc(40% + 5px);
+    height: 240px;
+    width: 485px;
     top: 0;
     left: 0;
     right: 0;
@@ -62,4 +70,35 @@ div#main_body {
     margin-left: 275px;
     margin-right: 25px;
     margin-top: 30px;
+    min-height: 75%;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 200px;
+    height: 100%;
+    padding-top: 300px;
+    padding-right: 20px;
+    text-align: right;
+    background-color: #424242;
+    color: white;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 30px 0 30px -30px;
+}
+
+nav a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
