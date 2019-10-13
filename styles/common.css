@@ -35,7 +35,7 @@ div#corner {
   );
 }
 
-div#corner > img {
+div#corner > img, #corner > a > img {
     position: relative;
     top: calc(0.33*100%);
     left: calc(0.22*100%);
