@@ -6,3 +6,8 @@
     pointer-events: none;
     cursor: default;
 }
+
+footer {
+    margin-top: 50px;
+    margin-left: 200px;
+}
