@@ -1,5 +1,13 @@
 @import url("common.css");
 
+html {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+    font-family: "Nunito", sans-serif;
+}
+
 div#main_body {
     display: flex;
     align-items: stretch;
@@ -15,13 +23,14 @@ div#main_body {
 textarea#input {
     resize: none;
     margin: 5px;
-    padding: 0;
+    padding: 10px;
     flex: 1;
     float: left;
 }
 
 div#view {
     margin: 5px;
+    padding: 10px;
     flex: 1;
     background-color: #aaaaaa;
     float: left;

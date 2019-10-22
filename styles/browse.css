@@ -1,5 +1,13 @@
 @import url('common.css');
 
+html {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+    font-family: "Nunito", sans-serif;
+}
+
 #browse .browse a {
     color: #80CBC4;
     font-size: 24px;
