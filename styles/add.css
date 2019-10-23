@@ -40,3 +40,27 @@ footer {
     margin-top: 50px;
     margin-left: 200px;
 }
+
+#add_idea_button{
+    margin-left: 550px;
+    margin-top: 40px;
+    padding: 20px 60px;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    background-color: #424242;
+    color: #80cbc4;
+    box-shadow: 5px 5px grey;
+}
+
+
+#add_idea_button:active {
+    transform: translateY(3px);
+    box-shadow: 5px 2px;
+  }
+  
+  #add_idea_button:hover {
+    background-color:white;
+  }
+
+ 
