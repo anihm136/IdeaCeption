@@ -1,66 +1,88 @@
 @import url("common.css");
 
-html {
-    font-family: "Source Sans Pro", sans-serif;
-}
-
-header {
-    font-family: "Nunito", sans-serif;
-}
-
-div#main_body {
-    display: flex;
-    align-items: stretch;
+div#input_area {
+  display: flex;
+  align-items: stretch;
+  min-height: 75%;
 }
 
 #add .add a {
-    color: #80CBC4;
-    font-size: 24px;
-    pointer-events: none;
-    cursor: default;
+  color: #80cbc4;
+  font-size: 24px;
+  pointer-events: none;
+  cursor: default;
 }
 
 textarea#input {
-    resize: none;
-    margin: 5px;
-    padding: 10px;
-    flex: 1;
-    float: left;
+  resize: none;
+  margin: 5px;
+  padding: 10px;
+  flex: 1;
+  float: left;
 }
 
 div#view {
-    margin: 5px;
-    padding: 10px;
-    flex: 1;
-    background-color: #aaaaaa;
-    float: left;
+  margin: 5px;
+  padding: 10px;
+  flex: 1;
+  background-color: #aaaaaa;
+  word-wrap: break-word;
+  word-break: break-all;
+  float: left;
+}
+
+#submit_button {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
-    margin-top: 50px;
-    margin-left: 200px;
+  margin-left: 200px;
 }
 
-#add_idea_button{
-    margin-left: 550px;
-    margin-top: 40px;
-    padding: 20px 60px;
-    border: none;
+#add_idea_button {
+  margin: 40px 0px;
+  padding: 20px 60px;
+  border: none;
+  text-align: center;
+  font-size: 30px;
+  background-color: #424242;
+  color: #80cbc4;
+}
+
+#utility {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#utility_bar {
+    box-sizing: border-box;
+    height: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 5px -5px 5px;
+    padding: 0px 11px;
     text-align: center;
-    font-size: 30px;
-    background-color: #424242;
-    color: #80cbc4;
-    box-shadow: 5px 5px grey;
+    background-color: green;
+    color: white;
 }
 
+#spacer {
+    box-sizing: border-box;
+    /* width: 50%; */
+    flex: 1;
+    margin: 30px 5px -5px 5px;
+    padding: 0px 10px;
+}
 
-#add_idea_button:active {
-    transform: translateY(3px);
-    box-shadow: 5px 2px;
-  }
-  
-  #add_idea_button:hover {
-    background-color:white;
-  }
+/* #add_idea_button:active { */
+  /* transform: translateY(3px); */
+  /* box-shadow: 5px 2px; */
+/* } */
 
- 
+#add_idea_button:hover {
+  background-color: white;
+}
+

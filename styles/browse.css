@@ -1,68 +1,68 @@
-@import url('common.css');
+@import url("common.css");
 
 html {
-    font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 header {
-    font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 #browse .browse a {
-    color: #80CBC4;
-    font-size: 24px;
-    pointer-events: none;
-    cursor: default;
+  color: #80cbc4;
+  font-size: 24px;
+  pointer-events: none;
+  cursor: default;
 }
 
 footer {
-    margin-top: 50px;
-    margin-left: 200px;
+  margin-top: 50px;
+  margin-left: 200px;
 }
 
-.idea_template img{
-    width: 175px;
-    height: 190px;
-    float:left;
-    margin-right: 20px;
+.idea_template img {
+  width: 175px;
+  height: 190px;
+  float: left;
+  margin-right: 20px;
 }
 
-.idea_template{
-    border: 3px solid #80CBC4;
-    overflow:auto;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color:#a9acb0;
+.idea_template {
+  border: 3px solid #80cbc4;
+  overflow: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #a9acb0;
 }
 
-.idea_text{
-    font-size: 20px;
+.idea_text {
+  font-size: 20px;
 }
 
-.idea_template:hover{
-    border:4px solid #227a53;
-    
+.idea_template:hover {
+  border: 4px solid #227a53;
 }
 
-#browse_ideas{
-font-size: 25px;
-margin-right: 200px;
+#browse_ideas {
+  font-size: 25px;
+  margin-right: 200px;
 }
 
-#filter{
-    margin-left: 300px;
-    border: none;
-    background-color: #80CBC4;
-    font-size: 25px;
-    margin-right: 50px;
+#filter {
+  margin-left: 300px;
+  border: none;
+  background-color: #80cbc4;
+  font-size: 25px;
+  margin-right: 50px;
 }
 
-#filter:active{
-    transform: translateY(3px);
+#filter:active {
+  transform: translateY(3px);
 }
 
-#sort{
-    background-color: #80CBC4;
-    border: none;
-    font-size: 23px;
+#sort {
+  background-color: #80cbc4;
+  border: none;
+  font-size: 23px;
 }
+
