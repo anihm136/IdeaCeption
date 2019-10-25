@@ -105,3 +105,22 @@ nav a {
     text-decoration: none;
 }
 
+#login{
+    font-size: 24px;
+    float: right;
+    background-color:#424242;
+    color:#80cbc4;
+    border: none;
+    overflow: hidden;
+    transition: background-color 0.2s,color 0.2s;
+  }
+  
+  #login:hover {
+      background-color: #80cbc4;
+      color: #424242;
+  }
+  
+  #login:active{
+    transform: translateY(3px);
+  }
+

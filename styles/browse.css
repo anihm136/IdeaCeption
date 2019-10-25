@@ -54,6 +54,7 @@ footer {
   background-color: #80cbc4;
   font-size: 25px;
   margin-right: 50px;
+  overflow: hidden;
 }
 
 #filter:active {
@@ -66,3 +67,6 @@ footer {
   font-size: 23px;
 }
 
+.idea_title{
+  font-size: 28px;
+}
