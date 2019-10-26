@@ -67,7 +67,7 @@ footer {
     color: #EEEEEE;
 }
 
-div.main_body {
+.main_body {
     margin-left: 275px;
     margin-right: 25px;
     /* margin-top: 30px; */
@@ -111,16 +111,24 @@ nav a {
     background-color:#424242;
     color:#80cbc4;
     border: none;
-    overflow: hidden;
-    transition: background-color 0.2s,color 0.2s;
+    /* overflow: hidden; */
+    
+     /* height: 50px; */
+    
+    
   }
   
-  #login:hover {
+  #login2{
+    text-decoration: none;
+    transition: background-color 0.3s,color 0.3s;
+    color: inherit;
+  }
+  #login2:hover {
       background-color: #80cbc4;
       color: #424242;
   }
   
-  #login:active{
+  #login2:active{
     transform: translateY(3px);
   }
 
