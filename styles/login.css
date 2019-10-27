@@ -1,61 +1,82 @@
-@import url('common.css');
+@import url("common.css");
 
-html {
-    font-family: "Source Sans Pro", sans-serif;
+.main_body {
+    display: flex;
 }
 
-header {
-    font-family: "Nunito", sans-serif;
-}
 footer {
-    margin-top: 50px;
-    margin-left: 200px;
+  margin-top: 50px;
+  margin-left: 200px;
 }
-#login_details,#login_footer{
-    margin-top:70px;
-    margin-left: 240px;
-}
-input[type=email], input[type=password] {
-    width: 50%;
-    padding: 10px 20px;
-    margin: 10px 0;
-    display: inline-block;
-    border: 1px solid #80CBC4;
-    box-sizing: border-box;
-  }
-#email:focus,#password:focus{
-    background-color: cadetblue;
-}
-  #login_button,#sign_up{
-    background-color: #424242;
-    color: white;
-    padding: 10px 15px;
-    margin: 5px 0;
-    border: none;
-    cursor: pointer;
-    width: 50%;
-    font-size: 20px;
-  }
 
-  #login_button:hover {
-    opacity: 0.9;
-  }
+#login_details,
+#login_footer {
+    flex: 1;
+    float: left;
+  margin-top: 70px;
+}
 
-  #login_button:active{
+#login_details {
+    border-right: 2px solid black;
+}
+
+/* #login_footer { */
+    /* display: flex; */
+    /* align-items: center; */
+    /* align-content: center; */
+    /* justify-content: center; */
+/* } */
+
+.email,
+.password {
+    width: 80%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.email:focus,
+.password:focus {
+  border-color: #80CBC4;
+}
+
+#login_button,
+#sign_up {
+  background-color: #424242;
+  color: white;
+  padding: 10px 15px;
+  margin: 45px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+#login_button:hover {
+  opacity: 0.9;
+}
+
+#login_button:active {
   transform: translateY(3px);
-  }
+}
 
-  #sign_up {
-    width: auto;
-    padding: 10px 18px;
-    background-color:#5b826f;
-    color: black;
-  }
+#sign_up {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #80CBC4;
+  color: black;
+}
 
-  #forgot{
-      margin-left: 275px;
-  }
+/* #forgot { */
+  /* margin-left: 275px; */
+/* } */
 
-  #login_footer{
-      margin-top: 20px;
-  }
+/* #login_footer { */
+  /* margin-top: 20px; */
+/* } */
+

@@ -65,13 +65,12 @@ footer {
     margin: 30px 5px -5px 5px;
     padding: 0px 11px;
     text-align: center;
-    background-color: green;
+    background-color: #009688;
     color: white;
 }
 
 #spacer {
     box-sizing: border-box;
-    /* width: 50%; */
     flex: 1;
     margin: 30px 5px -5px 5px;
     padding: 0px 10px;

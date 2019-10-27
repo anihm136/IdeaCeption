@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/login.css">
-    <link rel="icon" href="images/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
-    <title>IdeaCeption</title>
-</head>
-<body id="fund">
-    <header>
-        <span style="color:#80CBC4">IDEA</span><span style="color:#EEEEEE">CEPTION</span>
-    </header>
-    <nav>
-        IDEAS
-        <ul>
-            <li class="add"><a href="add.html">ADD</a></li>
-            <li class="browse"><a href="browse.html">BROWSE</a></li>
-            <li class="fund"><a href="fund.html">FUND</a></li>
-        </ul>
-    </nav>
-    <div id="corner-border"></div>
-    <div id="corner"><a href="index.html"><img src="images/logo.png" alt="LOGO" width=140px height=140px></a></div>
-    <div id="main_body">
-        <div id="login_details">
-            <form id="form">
-            <label for="email" style="font-size: 25px;">E-mail</label>
-            </br>
-            <input type="email" id="email">
-        </br>
-            <label for="password" style="font-size: 25px;">Password</label>
-        </br>
-            <input type="password" id="password">
-        </br>
-            <button id="login_button">LOGIN</button>
-    </br>
-        </form>
-        </div>
-        <div id="login_footer">
-            <button id="sign_up">SIGN UP</button>
-            <span id="forgot"><a href="#">Forgot password ?</a></span>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/login.css">
+        <link rel="icon" href="images/logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+        <title>IdeaCeption</title>
+    </head>
+    <body id="fund">
+        <header>
+            <span style="color:#80CBC4">IDEA</span><span style="color:#EEEEEE">CEPTION</span>
+        </header>
+        <nav>
+            IDEAS
+            <ul>
+                <li class="add"><a href="add.html">ADD</a></li>
+                <li class="browse"><a href="browse.html">BROWSE</a></li>
+                <li class="fund"><a href="fund.html">FUND</a></li>
+            </ul>
+        </nav>
+        <div id="corner-border"></div>
+        <div id="corner"><a href="index.html"><img src="images/logo.png" alt="LOGO" width=140px height=140px></a></div>
+        <main class="main_body">
+            <div id="login_details">
+                <form id="form">
+                    <label for="email" style="font-size: 16px;">E-mail</label>
+                    </br>
+                    <input type="email" class="email">
+                    </br>
+                    <label for="password" style="font-size: 16px;">Password</label>
+                    </br>
+                    <input type="password" class="password">
+                    </br>
+                    <center><button id="login_button">LOGIN</button></center>
+                    </br>
+                </form>
+            </div>
+            <div id="login_footer">
+                <div style="display:block; text-align:center;"><button id="sign_up">SIGN UP</button></div>
+                <div style="display:block; text-align:center;"><span id="forgot"><a href="#">Forgot password ?</a></span></div>
 
-        </div>
-    </div>
+            </div>
+        </main>
 
-    <footer><p>FOOTER</p></footer>
-</body>
+        <footer><p>FOOTER</p></footer>
+    </body>
 </html>

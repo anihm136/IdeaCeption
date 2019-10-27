@@ -1,134 +1,122 @@
 @import url("normalize.css");
 
 html {
-    height: 100vh;
-    font-family: "Source Sans Pro", sans-serif;
+  height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
-    height: inherit;
+  height: inherit;
 }
 
 header {
-    margin-top: 20px;
-    height: 100px;
-    background: #424242;
-    padding-left: 45%;
-    line-height: 100px;
-    font-family: "Nunito", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
+  margin-top: 20px;
+  height: 100px;
+  background: #424242;
+  padding-left: 45%;
+  line-height: 100px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
 }
 
 div#corner {
-    position: absolute;
-    height: 235px;
-    width: 480px;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #212121;
-    clip-path: polygon(
-    0 0,
-    100% 0,
-    0 100%
-  );
+  position: absolute;
+  height: 235px;
+  width: 480px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #212121;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
-div#corner > img, #corner > a > img {
-    position: relative;
-    top: calc(0.33*100%);
-    left: calc(0.22*100%);
-    transform: translate(-50%, -50%);
+div#corner > img,
+#corner > a > img {
+  position: relative;
+  top: calc(0.33 * 100%);
+  left: calc(0.22 * 100%);
+  transform: translate(-50%, -50%);
 }
 
 div#corner-border {
-    position: absolute;
-    height: 240px;
-    width: 485px;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #80CBC4;
-    clip-path: polygon(
-    0 0,
-    100% 0,
-    0 100%
-  );
+  position: absolute;
+  height: 240px;
+  width: 485px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #80cbc4;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
 footer {
-    clear: both;
-    /* margin-top: 250px; */
-    padding: 30px;
-    text-align: center;
-    background-color: #212121;
-    color: #EEEEEE;
+  clear: both;
+  /* margin-top: 250px; */
+  padding: 30px;
+  text-align: center;
+  background-color: #212121;
+  color: #eeeeee;
 }
 
 .main_body {
-    margin-left: 275px;
-    margin-right: 25px;
-    /* margin-top: 30px; */
+  margin-left: 275px;
+  margin-right: 25px;
+  /* margin-top: 30px; */
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    width: 200px;
-    height: 100%;
-    padding-top: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 20px;
-    text-align: right;
-    background-color: #424242;
-    color: white;
-    font-size: 28px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 200px;
+  height: 100%;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+  text-align: right;
+  background-color: #424242;
+  color: white;
+  font-size: 28px;
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul li {
-    margin: 30px 0 30px -30px;
+  margin: 30px 0 30px -30px;
 }
 
 nav a {
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 
-#login{
-    font-size: 24px;
-    float: right;
-    background-color:#424242;
-    color:#80cbc4;
-    border: none;
-    /* overflow: hidden; */
-    
-     /* height: 50px; */
-    
-    
-  }
-  
-  #login2{
-    text-decoration: none;
-    transition: background-color 0.3s,color 0.3s;
-    color: inherit;
-  }
-  #login2:hover {
-      background-color: #80cbc4;
-      color: #424242;
-  }
-  
-  #login2:active{
-    transform: translateY(3px);
-  }
+#login {
+  font-size: 24px;
+  float: right;
+  background-color: #424242;
+  color: white;
+  margin-right: 10px;
+  border: none;
+}
 
+#login2 {
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  color: inherit;
+}
+
+#login2:hover {
+  color: #80CBC4;
+}
+
+#login2:active {
+  transform: translateY(3px);
+}
