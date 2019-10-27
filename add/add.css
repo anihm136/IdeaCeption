@@ -1,4 +1,4 @@
-@import url("common.css");
+@import url("../styles/common.css");
 
 div#input_area {
   display: flex;
