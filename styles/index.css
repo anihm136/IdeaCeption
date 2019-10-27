@@ -1,13 +1,5 @@
 @import url('common.css');
 
-html {
-    font-family: "Source Sans Pro", sans-serif;
-}
-
-header {
-    font-family: "Nunito", sans-serif;
-}
-
 body > p {
     margin: 70px 100px 50px 250px;
     font-family: Source Sans Pro;
