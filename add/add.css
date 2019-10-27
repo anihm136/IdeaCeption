@@ -32,8 +32,8 @@ div#view {
 }
 
 #submit_button {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -51,37 +51,36 @@ footer {
 }
 
 #utility {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #utility_bar {
-    box-sizing: border-box;
-    height: 30px;
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px 5px -5px 5px;
-    padding: 0px 11px;
-    text-align: center;
-    background-color: #009688;
-    color: white;
+  box-sizing: border-box;
+  height: 30px;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 5px -5px 5px;
+  padding: 0px 11px;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+}
+
+#utility_bar p {
+  flex: 1;
+  cursor: pointer;
 }
 
 #spacer {
-    box-sizing: border-box;
-    flex: 1;
-    margin: 30px 5px -5px 5px;
-    padding: 0px 10px;
+  box-sizing: border-box;
+  flex: 1;
+  margin: 30px 5px -5px 5px;
+  padding: 0px 10px;
 }
-
-/* #add_idea_button:active { */
-  /* transform: translateY(3px); */
-  /* box-shadow: 5px 2px; */
-/* } */
 
 #add_idea_button:hover {
   background-color: white;
 }
-
