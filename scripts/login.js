@@ -15,3 +15,7 @@ $('#login_form').submit((ev) => {
   });
   console.log("Sent ajax req")
 })
+
+$('#sign_up').click(() => {
+  window.location = "../signup/"
+})

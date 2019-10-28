@@ -11,10 +11,12 @@ $db = $database->connect();
 $user = new User($db);
 
 // echo gettype($_POST['userMail']);
-$user->name = $_POST['userMail'];
+// var_dump($_POST);
+$user->name = $_POST['userName'];
 // echo $user->name;
 $user->email = $_POST['userMail'];
 $user->passwd = $_POST['userPass'];
 
-$user->userAuth();
+$user->signUp();
 ?>
+

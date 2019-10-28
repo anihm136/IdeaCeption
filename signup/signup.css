@@ -1,0 +1,45 @@
+@import url("../styles/common.css");
+
+#signup {
+  margin-top: 70px;
+}
+
+.email,
+.password,
+.username {
+  width: 80%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.email:focus,
+.password:focus,
+.username:focus {
+  border-color: #80cbc4;
+}
+
+#signup_button {
+  background-color: #424242;
+  color: white;
+  padding: 10px 15px;
+  margin: 45px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+#signup_button:hover {
+  opacity: 0.9;
+}
+
+#signup_button:active {
+  transform: translateY(3px);
+}
+

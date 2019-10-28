@@ -1,7 +1,7 @@
 @import url("../styles/common.css");
 
 .main_body {
-    display: flex;
+  display: flex;
 }
 
 footer {
@@ -11,37 +11,38 @@ footer {
 
 #login_details,
 #login_footer {
-    flex: 1;
-    float: left;
+  flex: 1;
+  float: left;
   margin-top: 70px;
 }
 
 #login_details {
-    border-right: 2px solid black;
+  flex: 2;
+  border-right: 2px solid black;
 }
 
 /* #login_footer { */
-    /* display: flex; */
-    /* align-items: center; */
-    /* align-content: center; */
-    /* justify-content: center; */
+/* display: flex; */
+/* align-items: center; */
+/* align-content: center; */
+/* justify-content: center; */
 /* } */
 
 .email,
 .password {
-    width: 80%;
+  width: 80%;
   padding: 10px 20px;
   margin: 10px 0;
   display: inline-block;
   border: none;
   border-bottom: 1px solid black;
   box-sizing: border-box;
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .email:focus,
 .password:focus {
-  border-color: #80CBC4;
+  border-color: #80cbc4;
 }
 
 #login_button,
@@ -68,15 +69,14 @@ footer {
 #sign_up {
   width: auto;
   padding: 10px 18px;
-  background-color: #80CBC4;
+  background-color: #80cbc4;
   color: black;
 }
 
 /* #forgot { */
-  /* margin-left: 275px; */
+/* margin-left: 275px; */
 /* } */
 
 /* #login_footer { */
-  /* margin-top: 20px; */
+/* margin-top: 20px; */
 /* } */
-
