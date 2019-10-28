@@ -1,7 +1,7 @@
 <?php
     class User {
         private $conn;
-        private $table = 'accounts';
+        private $table = 'users';
         
         public $id;
         public $name;
@@ -23,9 +23,10 @@
             $stmt->bindParam(':name',$this->name);
             $stmt->bindParam(':email',$this->email);
             $stmt->execute();
-            if (!$stmt) {
+            $res = $stmt->fetch(PDO::FETCH_ASSOC);
+            if (!$res) {
                 echo "User does not exist";
-            } elseif ($this->passwd !== $stmt->fetch(PDO::FETCH_ASSOC)['passwd']) {
+            } elseif ($this->passwd !== $res['passwd']) {
                 echo "Wrong password";
             } else {
                 echo "User Authorised";
