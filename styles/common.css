@@ -97,26 +97,3 @@ nav a {
   color: white;
   text-decoration: none;
 }
-
-#login {
-  font-size: 24px;
-  float: right;
-  background-color: #424242;
-  color: white;
-  margin-right: 10px;
-  border: none;
-}
-
-#login2 {
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-  color: inherit;
-}
-
-#login2:hover {
-  color: #80CBC4;
-}
-
-#login2:active {
-  transform: translateY(3px);
-}

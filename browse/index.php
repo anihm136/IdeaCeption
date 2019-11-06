@@ -1,0 +1,38 @@
+<?php
+$pagename = "browse";
+include("../header.php");
+?>
+    <div class="main_body">
+    </br></br>
+    <span id="browse_ideas">BROWSE IDEAS</span>
+    <button id="filter">FILTER</button>
+    <select id="sort" title="This is a title">
+        <option value="" selected disabled hidden>SORT</option>
+        <option>By Name</option>
+        <option>By Time</option>
+        <option>By Popularity</option>
+    </select>
+    <hr color="black"><br>
+        <div class="idea_template">
+            <img src="C:\Users\Rohit\Desktop\IdeaCeption\images\logo-dark.png" >
+            <h2 class="idea_title">Title of Idea</h2>
+            <div class="idea_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio provident, iste enim voluptates quas earum mollitia animi quam exercitationem sed perspiciatis veritatis ipsam sapiente illo, in pariatur, omnis eius sequi.</div>
+        </div>
+
+        <div class="idea_template">
+            <img src="C:\Users\Rohit\Desktop\IdeaCeption\images\logo-dark.png" >
+            <h2 class="idea_title">Title of Idea</h2>
+            <div class="idea_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio provident, iste enim voluptates quas earum mollitia animi quam exercitationem sed perspiciatis veritatis ipsam sapiente illo, in pariatur, omnis eius sequi.</div>
+        </div>
+
+        <div class="idea_template">
+            <img src="C:\Users\Rohit\Desktop\IdeaCeption\images\logo-dark.png" >
+            <h2 class="idea_title">Title of Idea</h2>
+            <div class="idea_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio provident, iste enim voluptates quas earum mollitia animi quam exercitationem sed perspiciatis veritatis ipsam sapiente illo, in pariatur, omnis eius sequi.</div>
+        </div>
+    </div>
+    <script src="scripts/browse.js"></script>
+<?php
+include("../footer.php");
+?>
+

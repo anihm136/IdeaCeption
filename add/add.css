@@ -47,6 +47,7 @@ footer {
   text-align: center;
   font-size: 30px;
   background-color: #424242;
+  transition: all 0.3s;
   color: #80cbc4;
 }
 
@@ -61,7 +62,7 @@ footer {
   flex: 1;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   margin: 30px 5px -5px 5px;
   padding: 0px 11px;
   text-align: center;

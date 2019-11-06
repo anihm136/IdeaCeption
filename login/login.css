@@ -21,13 +21,6 @@ footer {
   border-right: 2px solid black;
 }
 
-/* #login_footer { */
-/* display: flex; */
-/* align-items: center; */
-/* align-content: center; */
-/* justify-content: center; */
-/* } */
-
 .email,
 .password {
   width: 80%;
@@ -37,7 +30,7 @@ footer {
   border: none;
   border-bottom: 1px solid black;
   box-sizing: border-box;
-  transition: all 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .email:focus,
@@ -55,7 +48,7 @@ footer {
   cursor: pointer;
   width: 50%;
   font-size: 20px;
-  transition: all 0.3s;
+  transition: color background-color 0.3s;
 }
 
 #login_button:hover {
