@@ -26,12 +26,19 @@ else {
 }
 ?>
     <header>
-        <span style="color:#80CBC4">IDEA</span><span style="color:#EEEEEE">CEPTION</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-5"><span style="color:#80CBC4">IDEA</span><span style="color:#EEEEEE">CEPTION</span></div>
+                <div class="col-md-1 offset-md-1">
+                  <button class="btn login-button-header">LOGIN</button>
+                </div>
+            </div>
+        </div>
     </header>
     <div id="corner-border"></div>
 <?php 
 if (isset($pagename)) {
-  echo '<div id="corner"><img src="../images/logo.png" alt="LOGO" width=140px height=140px></div>';
+  echo '<div id="corner"><a href="../"><img src="../images/logo.png" alt="LOGO" width=140px height=140px></a></div>';
 }
 else {
   echo '<div id="corner"><img src="images/logo.png" alt="LOGO" width=140px height=140px></div>';

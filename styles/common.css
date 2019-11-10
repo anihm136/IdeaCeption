@@ -13,11 +13,9 @@ header {
   margin-top: 20px;
   height: 100px;
   background: #424242;
-  padding-left: 45%;
+  /* padding-left: 45%; */
   line-height: 100px;
   font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 60px;
 }
 
@@ -53,7 +51,7 @@ div#corner-border {
 
 footer {
   clear: both;
-  /* margin-top: 250px; */
+  margin-top: 50px;
   padding: 30px;
   text-align: center;
   background-color: #212121;
@@ -96,4 +94,14 @@ nav a {
   font-size: 18px;
   color: white;
   text-decoration: none;
+}
+
+.login-button-header {
+  color: #80CBc4;
+  border-color: #80CBc4;
+}
+
+.login-button-header:hover {
+  color: #424242;
+  background-color: #80CBC4;
 }

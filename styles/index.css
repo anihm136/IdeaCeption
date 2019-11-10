@@ -1,32 +1,35 @@
 @import url('common.css');
 
-body > p {
-    margin: 70px 100px 50px 250px;
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
+.main_body > p {
+    margin: 50px 15px;
     font-size: 18px;
     line-height: 200%;
 }
 
-div.button {
-    box-sizing: border-box;
-    width: calc(33.33% - 24px);
-    float: left;
-    text-align: center;
-    padding: 10px;
-}
-
-div.button:hover {
-    /* background-color: gray; */
-    border: 3px solid #009688;
-}
-
-div.button > p {
-    text-align: center;
-}
-
 div#wrapper {
-    margin-left: 250px;
-    margin-right: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #e5e5e5;
+  transition: background 0.3s;
+}
+
+.card:hover {
+  background-color: #ffffff;
+}
+
+button {
+  margin: auto;
 }
