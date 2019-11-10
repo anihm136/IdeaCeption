@@ -13,13 +13,13 @@ include("../header.php");
           </br>
           <input type="password" class="password" name="userPass">
           </br>
-          <center><button id="login_button" name="login_submit" value="1">LOGIN</button></center>
+          <button class="btn btn-secondary btn-block" name="login_submit" value="1">LOGIN</button>
           </br>
         </form>
       </div>
       <div id="login_footer">
-        <div style="display:block; text-align:center;"><button id="sign_up">SIGN UP</button></div>
-        <div style="display:block; text-align:center;"><span id="forgot"><a href="#">Forgot password ?</a></span></div>
+        <div class="block"><a href="../signup" class="btn btn-primary">SIGN UP</a></div>
+        <div class="block"><span id="forgot"><a href="#">Forgot password ?</a></span></div>
       </div>
     </main>
     <script src="../scripts/login.js"></script>            

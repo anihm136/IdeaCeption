@@ -23,23 +23,9 @@
   border-color: #80cbc4;
 }
 
-#signup_button {
+.btn-block {
+  width: 75%;
   background-color: #424242;
-  color: white;
-  padding: 10px 15px;
-  margin: 45px 0;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  font-size: 20px;
-  transition: all 0.3s;
+  margin: auto;
+  margin-top: 1.5rem;
 }
-
-#signup_button:hover {
-  opacity: 0.9;
-}
-
-#signup_button:active {
-  transform: translateY(3px);
-}
-

@@ -6,12 +6,11 @@
 
 footer {
   margin-top: 50px;
-  margin-left: 200px;
+  /* margin-left: 200px; */
 }
 
 #login_details,
 #login_footer {
-  flex: 1;
   float: left;
   margin-top: 70px;
 }
@@ -19,6 +18,13 @@ footer {
 #login_details {
   flex: 2;
   border-right: 2px solid black;
+}
+
+#login_footer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .email,
@@ -38,38 +44,19 @@ footer {
   border-color: #80cbc4;
 }
 
-#login_button,
-#sign_up {
+.login-button-header {
+  display: none;
+}
+
+.btn-block {
+  width: 75%;
+  margin: 1rem auto;
   background-color: #424242;
-  color: white;
-  padding: 10px 15px;
-  margin: 45px 0;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  font-size: 20px;
-  transition: color background-color 0.3s;
 }
 
-#login_button:hover {
-  opacity: 0.9;
+.block {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
 }
-
-#login_button:active {
-  transform: translateY(3px);
-}
-
-#sign_up {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #80cbc4;
-  color: black;
-}
-
-/* #forgot { */
-/* margin-left: 275px; */
-/* } */
-
-/* #login_footer { */
-/* margin-top: 20px; */
-/* } */

@@ -15,10 +15,9 @@ header {
   cursor: default;
 }
 
-footer {
-  margin-top: 50px;
-  margin-left: 200px;
-}
+/* footer { */
+  /* margin-top: 50px; */
+/* } */
 
 .idea_template img {
   width: 175px;

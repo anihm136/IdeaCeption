@@ -17,7 +17,7 @@ include("../header.php");
           </br>
           <input type="password" class="password" name="userPass">
           </br>
-          <center><button id="signup_button" name="signup_submit" value="1">SIGN UP</button></center>
+          <button class="btn btn-secondary btn-block" name="signup_submit" value="1">SIGN UP</button>
           </br>
         </form>
       </div>

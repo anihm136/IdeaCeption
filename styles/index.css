@@ -1,6 +1,6 @@
 @import url('common.css');
 
-.main_body > p {
+main > p {
     margin: 50px 15px;
     font-size: 18px;
     line-height: 200%;
@@ -24,6 +24,7 @@ a:hover {
 .card {
   background-color: #e5e5e5;
   transition: background 0.3s;
+  margin: 0 5px 60px 5px;
 }
 
 .card:hover {

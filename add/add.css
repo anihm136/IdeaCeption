@@ -1,9 +1,9 @@
 @import url("../styles/common.css");
 
-div#input_area {
+#input_area {
   display: flex;
   align-items: stretch;
-  min-height: 75%;
+  min-height: 70vh;
 }
 
 #add .add a {
@@ -36,20 +36,16 @@ div#view {
   justify-content: center;
 }
 
-footer {
-  margin-left: 200px;
-}
-
-#add_idea_button {
-  margin: 40px 0px;
-  padding: 20px 60px;
-  border: none;
-  text-align: center;
-  font-size: 30px;
-  background-color: #424242;
-  transition: all 0.3s;
-  color: #80cbc4;
-}
+/* #add_idea_button { */
+  /* margin: 40px 0px; */
+  /* padding: 20px 60px; */
+  /* border: none; */
+  /* text-align: center; */
+  /* font-size: 30px; */
+  /* background-color: #424242; */
+  /* transition: all 0.3s; */
+  /* color: #80cbc4; */
+/* } */
 
 #utility {
   display: flex;
@@ -82,6 +78,8 @@ footer {
   padding: 0px 10px;
 }
 
-#add_idea_button:hover {
-  background-color: white;
+.btn-block {
+  background-color: #424242;
+  width: 75%;
+  margin: 30px auto 60px auto;
 }
