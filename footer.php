@@ -1,3 +1,10 @@
+<?php
+  if (isset($pagename)) {
+    echo '<script src="../scripts/common.js"></script>';
+  } else {
+    echo '<script src="scripts/common.js"></script>';
+  }
+?>
 
 <div class="container-fluid">
   <div class="row">

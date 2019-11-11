@@ -121,3 +121,13 @@ nav #nav-contents a {
   color: #424242;
   background-color: #80CBC4;
 }
+
+.logout-button-header {
+  color: #80CBc4;
+  border-color: #80CBc4;
+}
+
+.logout-button-header:hover {
+  color: #424242;
+  background-color: #80CBC4;
+}

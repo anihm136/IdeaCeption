@@ -35,12 +35,14 @@ else {
                 <div class="col-md-1 offset-md-1">
                   <?php 
                      if (isset($pagename)) {
-                        echo '<a href="../login" class="btn login-button-header" role="button">LOGIN</a>';
+                      echo '<a href="../login" class="btn login-button-header" role="button">LOGIN</a>';
+                      echo '<a href="../api/logout.php" class="btn logout-button-header" style="display:none" role="button">LOGOUT</a>';
                      } else {
                       echo '<a href="login" class="btn login-button-header" role="button">LOGIN</a>';
-                          
+                      echo '<a href="api/logout.php" class="btn logout-button-header" style="display:none" role="button">LOGOUT</a>';  
                      }
                   ?>
+                  <!-- <a href=""class="btn logout-button-header" style="display:none">LOGOUT</a> -->
                 </div>
             </div>
         </div>

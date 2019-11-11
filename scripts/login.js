@@ -17,6 +17,7 @@ $('#login_form').submit((ev) => {
       $("#login_footer").hide();
        var success = "<div class='alert alert-success'>You have successfully logged in as " + user.name + "!</div>";
        $("main.main_body").append(success);
+       sessionStorage.setItem("logged_in","true");
        setTimeout(() => {window.location = "../";},3000)
     } else {
       console.log("This is in else")
