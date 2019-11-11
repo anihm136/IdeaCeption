@@ -27,7 +27,7 @@ class User {
     } elseif ($this->passwd !== $res['passwd']) {
       echo "Wrong password";
     } else {
-      echo "User Authorised";
+      echo "User Authenticated";
     }
   }
 
