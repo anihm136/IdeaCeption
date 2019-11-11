@@ -11,9 +11,19 @@ $('#login_form').submit((ev) => {
     url: target,
     data: sendObj
   }).done((data) => {
-    console.log(data);
+     if (typeof(JSON.parse(data)) == "object") {
+      var user = JSON.parse(data);
+       $("#login_details").hide();
+      $("#login_footer").hide();
+       var success = "<div class='alert alert-success'>You have successfully logged in as " + user.name + "!</div>";
+       $("main.main_body").append(success);
+       setTimeout(() => {window.location = "../";},3000)
+    } else {
+      console.log("This is in else")
+      console.log(data);
+    }
+    // console.log(typeof( data ));
   });
-  console.log("Sent ajax req")
 })
 
 $('#sign_up').click(() => {

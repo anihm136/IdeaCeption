@@ -69,6 +69,7 @@ footer {
 .main_body {
   margin-left: 275px;
   margin-right: 25px;
+  min-height: 60vh;
   /* margin-top: 30px; */
 }
 

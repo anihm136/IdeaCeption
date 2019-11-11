@@ -14,7 +14,7 @@ class User {
   }
 
   public function userAuth() {
-    $query = 'SELECT passwd FROM ' .$this->table. ' WHERE name=:name OR email=:email';
+    $query = 'SELECT * FROM ' .$this->table. ' WHERE name=:name OR email=:email';
 
     $stmt = $this->conn->prepare($query);
     $stmt->bindParam(':name',$this->name);
@@ -23,11 +23,14 @@ class User {
     $res = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$res) {
-      echo "User does not exist";
+      echo 0;
     } elseif ($this->passwd !== $res['passwd']) {
-      echo "Wrong password";
+      echo 1;
     } else {
-      echo "User Authenticated";
+      session_start();
+      $user_obj = array("id"=>$res['id'], "name"=>$res['name'], "status"=>$res['user_status']);
+      $_SESSION["current_user"] = $user_obj;
+      echo json_encode($_SESSION['current_user']);
     }
   }
 
@@ -52,4 +55,5 @@ class User {
   }
 
 }
+
 ?>
