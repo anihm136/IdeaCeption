@@ -1,11 +1,11 @@
 @import url("../styles/common.css");
 
 html {
-    font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 header {
-    font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 #fund .fund a {
@@ -71,5 +71,5 @@ header {
 }
 
 /* footer { */
-  /* margin-top: 50px; */
+/* margin-top: 50px; */
 /* } */

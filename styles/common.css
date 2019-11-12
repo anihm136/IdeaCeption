@@ -113,21 +113,21 @@ nav #nav-contents a {
 }
 
 .login-button-header {
-  color: #80CBc4;
-  border-color: #80CBc4;
+  color: #80cbc4;
+  border-color: #80cbc4;
 }
 
 .login-button-header:hover {
   color: #424242;
-  background-color: #80CBC4;
+  background-color: #80cbc4;
 }
 
 .logout-button-header {
-  color: #80CBc4;
-  border-color: #80CBc4;
+  color: #80cbc4;
+  border-color: #80cbc4;
 }
 
 .logout-button-header:hover {
   color: #424242;
-  background-color: #80CBC4;
+  background-color: #80cbc4;
 }

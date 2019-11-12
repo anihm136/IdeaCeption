@@ -1,9 +1,9 @@
-@import url('common.css');
+@import url("common.css");
 
 main > p {
-    margin: 50px 15px;
-    font-size: 18px;
-    line-height: 200%;
+  margin: 50px 15px;
+  font-size: 18px;
+  line-height: 200%;
 }
 
 div#wrapper {
