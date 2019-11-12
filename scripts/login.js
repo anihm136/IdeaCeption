@@ -5,7 +5,6 @@ $('#login_form').submit((ev) => {
   var login = $('.btn-block').val();
   var target = $('#login_form').attr('action');
   var sendObj = {userMail: userName, userPass: pass, login_submit: login};
-  console.log(target);
   $.ajax({
     method: 'POST',
     url: target,
@@ -19,9 +18,10 @@ $('#login_form').submit((ev) => {
        $("main.main_body").append(success);
        sessionStorage.setItem("logged_in","true");
        setTimeout(() => {window.location = "../";},3000)
+    } else if (data == 0) {
+      $(".login-error").html("Please check username/email").show();
     } else {
-      console.log("This is in else")
-      console.log(data);
+      $('.login-error').html("Password is incorrect. Please check and try again").show();
     }
     // console.log(typeof( data ));
   });
@@ -30,3 +30,4 @@ $('#login_form').submit((ev) => {
 $('#sign_up').click(() => {
   window.location = "../signup/"
 })
+

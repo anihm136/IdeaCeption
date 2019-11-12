@@ -5,6 +5,7 @@ include("../header.php");
     <main class="main_body">
       <div id="login_details">
         <form id="login_form" action="../api/login.php">
+          <div class="alert alert-danger login-error" style="display:none"></div>
           <label for="email" style="font-size: 16px;">E-mail</label>
           </br>
           <input type="email" class="email" name="userMail">
