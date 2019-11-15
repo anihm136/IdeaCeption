@@ -1,7 +1,12 @@
 @import url("../styles/common.css");
 
+.main_body {
+  display: flex;
+}
+
 #sign_up {
   margin-top: 70px;
+  flex: 1;
 }
 
 .email,
@@ -28,4 +33,9 @@
   background-color: #424242;
   margin: auto;
   margin-top: 1.5rem;
+}
+
+.alert-success {
+  /* margin: 25vh auto 0 auto; */
+  margin: auto;
 }

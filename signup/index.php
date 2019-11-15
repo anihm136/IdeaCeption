@@ -5,6 +5,7 @@ include("../header.php");
     <main class="main_body">
       <div id="sign_up">
         <form id="signup_form" action="../api/signup.php">
+          <div class="alert alert-danger signup-error" style="display:none"></div>
           <label for="text" style="font-size: 16px;">Username</label>
           </br>
           <input type="text" class="username" name="userName">

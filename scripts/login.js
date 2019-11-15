@@ -10,6 +10,7 @@ $("#login_form").submit(ev => {
     url: target,
     data: sendObj
   }).done(data => {
+    console.log(data);
     if (typeof JSON.parse(data) == "object") {
       var user = JSON.parse(data);
       $("#login_details").hide();

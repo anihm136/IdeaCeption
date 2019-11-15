@@ -24,7 +24,7 @@ class User {
 
     if (!$res) {
       echo 0;
-    } elseif ($this->passwd !== $res['passwd']) {
+    } elseif (!password_verify($this->passwd, $res['passwd'])) {
       echo 1;
     } else {
       session_start();
@@ -37,19 +37,23 @@ class User {
   public function signUp() {
     $query = 'INSERT INTO ' .$this->table. ' (name, email, passwd) VALUES (:name, :email, :passwd)';
 
+    $hashed_pass = password_hash($this->passwd, PASSWORD_BCRYPT);
     $stmt = $this->conn->prepare($query);
     $stmt->bindParam(':name', $this->name);
     $stmt->bindParam(':email', $this->email);
-    $stmt->bindParam(':passwd', $this->passwd);
+    $stmt->bindParam(':passwd', $hashed_pass);
     try {
       $stmt->execute();
-      echo "User created";
+      session_start();
+      $user_obj = array("id"=>$this->id, "name"=>$this->name, "status"=>$this->user_status);
+      $_SESSION["current_user"] = $user_obj;
+      echo json_encode($_SESSION['current_user']);
     } catch (PDOException $e) {
       // echo "CODE: ".$e->getCode();
       if ($e->getCode() == 23000) {
-        echo "Username or email already exists";
+        echo 0;
       } else {
-        throw($e);
+        echo -1;
       }
     }
   }
