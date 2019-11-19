@@ -10,7 +10,7 @@ header {
 
 #fund .fund a {
   color: #80cbc4;
-  font-size: 24px;
+font-size: 24px;
   pointer-events: none;
   cursor: default;
 }
