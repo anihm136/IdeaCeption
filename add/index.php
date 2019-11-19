@@ -8,10 +8,12 @@ include("../header.php");
     <div class="col-md-2 nav-container">
       <?php include("../sidebar.php");?>
     </div>
+  
     <div class="col-md-10">
       <div class="title-input">
         <input type="text" name="title" class="title" placeholder="Title">
       </div>
+      <div class="alert alert-danger signup-error" style="display:none"></div>
       <main id="input_area">
         <div id="utility">
           <div id="utility_bar">
@@ -27,7 +29,7 @@ include("../header.php");
         </div>
         <div id="view"></div>
       </main>
-      <center><button class="btn btn-secondary btn-block" onclick="testfunc()">ADD  IDEA</button></center>
+      <center><button class="btn btn-secondary btn-block" onclick="testfunc()" id="add_idea_btn">ADD  IDEA</button></center>
     </div>
   </div>
 </div>

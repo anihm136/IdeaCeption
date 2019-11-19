@@ -52,3 +52,53 @@ document.getElementById("code").addEventListener("click", () => {
   input.focus();
   input.selectionEnd -= 4;
 });
+if(sessionStorage.getItem("logged_in")==null)
+{
+  $("#input_area").hide();
+  $(".title-input").hide();
+  $("#add_idea_btn").hide();
+  var login_to_add =
+        "Please login to add idea!";
+  $(".alert alert-danger signup-error").innerHTML=login_to_add;
+  
+  setTimeout(()=>{ window.location="../"},4000);
+}
+
+function testfunc(){
+  var title=$(".title").val();
+  // var post=$("#input").val();
+  var content=document.getElementById("view").innerHTML;
+  // console.log(title+" "+content);
+
+  var d=new Date();
+  var time=d.toLocaleString();
+
+  // console.log(title+" "+content+" "+time);
+
+  var sendObj = {
+    postTitle :title,
+    postTime:time,
+    postContent:content,
+    
+  };
+  console.log(sendObj);
+  var target="../api/add_idea.php";
+  console.log(target);
+
+  $.ajax({
+    method: "POST",
+    url: target,
+    data: sendObj
+  }).done(data => {
+    console.log(" After call"+data);
+    
+    if(typeof (JSON.parse(data))=="object"){
+      console.log("Idea added succesfully");
+    }
+    else{
+      console.log("Error");
+    }
+
+    // console.log(JSON.parse(data));
+  });
+}
