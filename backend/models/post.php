@@ -1,7 +1,7 @@
 <?php
 class Post {
   private $conn;
-  private $table = 'post';
+  private $table = 'ideas';
 
   public $id;
   public $name;
@@ -25,12 +25,10 @@ class Post {
 
     try {
         $stmt->execute();
-        // session_start();
         $post_obj = array("id"=>$this->id, "name"=>$this->name, "title"=>$this->title,"content"=>$this->content);
         $_SESSION["recent_post"] = $post_obj;
         echo json_encode($_SESSION["recent_post"]);
       } catch (PDOException $e) {
-        //  echo "CODE: ".$e->getCode();
          if ($e->getCode() == 23000) {
              echo 0;
         } else {

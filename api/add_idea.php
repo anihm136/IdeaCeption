@@ -10,16 +10,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $db = $database->connect();
 
   $post = new Post($db);
-session_start();
-$temp=$_SESSION["current_user"]["name"];
+  session_start();
+  $temp=$_SESSION["current_user"]["name"];
 
-$post->name = $temp;
-$post->title = $_POST['postTitle'];
-$post->content = $_POST['postContent'];
-// $post->time=$_POST['postTime'];
+  $post->name = $temp;
+  $post->title = $_POST['postTitle'];
+  $post->content = $_POST['postContent'];
+  // $post->time=$_POST['postTime'];
 
-$post->postUp();
+  $post->postUp();
 } else {
-  header("Location: ../signup");
+  header("Location: ../");
 }
 ?>

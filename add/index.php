@@ -13,7 +13,10 @@ include("../header.php");
       <div class="title-input">
         <input type="text" name="title" class="title" placeholder="Title">
       </div>
-      <div class="alert alert-danger signup-error" style="display:none"></div>
+      <div class="alert alert-custom" style="display:none">
+        <p>Please login to add idea!</p>
+        <button class="btn btn-login" onclick="login_redirect()">LOGIN NOW</button>
+      </div>
       <main id="input_area">
         <div id="utility">
           <div id="utility_bar">
@@ -25,11 +28,10 @@ include("../header.php");
             <p id="code">&lsaquo;C&rsaquo;</p>
           </div>
           <textarea id="input" placeholder="Type in your idea here"></textarea>
-          <!-- <div id="spacer"></div> -->
         </div>
         <div id="view"></div>
       </main>
-      <center><button class="btn btn-secondary btn-block" onclick="testfunc()" id="add_idea_btn">ADD  IDEA</button></center>
+      <center><button class="btn btn-secondary btn-block" onclick="addfunc()" id="add_idea_btn">ADD IDEA</button></center>
     </div>
   </div>
 </div>

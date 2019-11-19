@@ -92,3 +92,24 @@ div#view {
 .title-input input:focus::placeholder {
   color: transparent;
 }
+
+.alert-custom {
+  text-align: center;
+  color: #009688;
+  background-color: #cdf9f5;
+  border-color: #009688;
+  width: 50%;
+  margin: 100px auto 250px auto;
+}
+
+.btn-login {
+  color: #fff;
+  background-color: #009688;
+}
+
+.btn-login:hover {
+  color: #fff;
+  background-color: #008074;
+}
+
+

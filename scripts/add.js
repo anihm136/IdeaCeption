@@ -52,34 +52,29 @@ document.getElementById("code").addEventListener("click", () => {
   input.focus();
   input.selectionEnd -= 4;
 });
+
 if(sessionStorage.getItem("logged_in")==null)
 {
   $("#input_area").hide();
   $(".title-input").hide();
   $("#add_idea_btn").hide();
-  var login_to_add =
-        "Please login to add idea!";
-  $(".alert alert-danger signup-error").innerHTML=login_to_add;
-  
-  setTimeout(()=>{ window.location="../"},4000);
+  $(".alert.alert-custom").show();
+  // var login_to_add = "Please login to add idea!";
+  // $(".alert.alert-danger").innerText = login_to_add;
+
+  // setTimeout(()=>{ window.location="../"},4000);
 }
 
-function testfunc(){
+function addfunc(){
   var title=$(".title").val();
   // var post=$("#input").val();
-  var content=document.getElementById("view").innerHTML;
-  // console.log(title+" "+content);
-
-  var d=new Date();
-  var time=d.toLocaleString();
-
-  // console.log(title+" "+content+" "+time);
+  var content=document.getElementById("input").value;
+  // console.log(content);
 
   var sendObj = {
     postTitle :title,
-   // postTime:time,
     postContent:content,
-    
+
   };
   console.log(sendObj);
   var target="../api/add_idea.php";
@@ -91,14 +86,32 @@ function testfunc(){
     data: sendObj
   }).done(data => {
     console.log(" After call"+data);
-    
-    if(typeof (JSON.parse(data))=="object"){
-      console.log("Idea added succesfully");
-    }
-    else{
-      console.log("Error");
+    try {
+      if(typeof (JSON.parse(data))=="object"){
+        console.log("Idea added succesfully");
+      }
+      else{
+        console.log("Error");
+      }
+    } catch (e) {
+      console.log("ERROR: " + e);
     }
 
     // console.log(JSON.parse(data));
   });
+}
+
+function login_redirect() {
+  setCookie("source", window.location, 365);
+  window.location = "../login";
+}
+
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
