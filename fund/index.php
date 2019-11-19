@@ -9,6 +9,10 @@ include('../header.php');
       <?php include('../sidebar.php');?>
     </div>
     <div class="col-md-10">
+      <div class="alert alert-custom" style="display:none">
+        <p>Please login to fund idea!</p>
+        <button class="btn btn-login" onclick="login_redirect()">LOGIN NOW</button>
+      </div>
       <main>
         </br>
         <h2 id="main_body_text" style="font-size: 30px;">CHOOSE AMOUNT TO DONATE</h2>
@@ -28,6 +32,8 @@ include('../header.php');
     </div>
   </div>
 </div>
+
+<script src="../scripts/fund.js"></script>
 
 <?php 
 include('../footer.php');

@@ -21,14 +21,13 @@ $("#login_form").submit(ev => {
         "!</div>";
       $("main.main_body").append(success);
       sessionStorage.setItem("logged_in", "true");
-      console.log(document.cookie);
       setTimeout(() => {
         if (getCookie("source") != null) {
           window.location = getCookie("source");
-        } else {
+} else {
           window.location = "../";
         }
-      }, 20000);
+      }, 3000);
     } else if (data == 0) {
       $(".login-error")
         .html("Please check username/email")
@@ -50,13 +49,4 @@ if (sessionStorage.getItem("logged_in")) {
   $(".logout-message").show();
 }
 
-function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-}
+
