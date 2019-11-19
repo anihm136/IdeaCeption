@@ -6,9 +6,9 @@ include("../header.php");
       <div id="login_details">
         <form id="login_form" action="../api/login.php">
           <div class="alert alert-danger login-error" style="display:none"></div>
-          <label for="email" style="font-size: 16px;">Username/E-mail</label>
+          <label for="email" style="font-size: 16px;">E-mail</label>
           </br>
-          <input type="text" class="email" name="userMail">
+          <input type="email" class="email" name="userMail">
           </br>
           <label for="password" style="font-size: 16px;">Password</label>
           </br>

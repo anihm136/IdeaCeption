@@ -59,6 +59,10 @@ if(sessionStorage.getItem("logged_in")==null)
   $(".title-input").hide();
   $("#add_idea_btn").hide();
   $(".alert.alert-custom").show();
+  // var login_to_add = "Please login to add idea!";
+  // $(".alert.alert-danger").innerText = login_to_add;
+
+  // setTimeout(()=>{ window.location="../"},4000);
 }
 
 function addfunc(){
@@ -97,4 +101,17 @@ function addfunc(){
   });
 }
 
+function login_redirect() {
+  setCookie("source", window.location, 365);
+  window.location = "../login";
+}
 
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
