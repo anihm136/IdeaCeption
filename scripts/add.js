@@ -77,7 +77,7 @@ function testfunc(){
 
   var sendObj = {
     postTitle :title,
-    postTime:time,
+   // postTime:time,
     postContent:content,
     
   };

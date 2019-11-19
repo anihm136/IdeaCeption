@@ -16,7 +16,7 @@ $temp=$_SESSION["current_user"]["name"];
 $post->name = $temp;
 $post->title = $_POST['postTitle'];
 $post->content = $_POST['postContent'];
-$post->time=$_POST['postTime'];
+// $post->time=$_POST['postTime'];
 
 $post->postUp();
 } else {
