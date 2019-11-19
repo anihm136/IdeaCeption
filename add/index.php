@@ -9,19 +9,22 @@ include("../header.php");
       <?php include("../sidebar.php");?>
     </div>
     <div class="col-md-10">
-      <div id="utility">
-        <div id="utility_bar">
-          <p id="bold" style="font-weight:bold">B</p>
-          <p id="italics" style="font-style:italic">I</p>
-          <p id="underline" style="text-decoration: underline">U</p>
-          <p id="strikethrough" style="text-decoration: strikethrough">S</p>
-          <p id="quote">Q</p>
-          <p id="code">&lsaquo;C&rsaquo;</p>
-        </div>
-        <div id="spacer"></div>
+      <div class="title-input">
+        <input type="text" name="title" class="title" placeholder="Title">
       </div>
       <main id="input_area">
-        <textarea id="input" placeholder="Type in your idea here"></textarea>
+        <div id="utility">
+          <div id="utility_bar">
+            <p id="bold" style="font-weight:bold">B</p>
+            <p id="italics" style="font-style:italic">I</p>
+            <p id="underline" style="text-decoration: underline">U</p>
+            <p id="strikethrough" style="text-decoration: strikethrough">S</p>
+            <p id="quote">Q</p>
+            <p id="code">&lsaquo;C&rsaquo;</p>
+          </div>
+          <textarea id="input" placeholder="Type in your idea here"></textarea>
+          <!-- <div id="spacer"></div> -->
+        </div>
         <div id="view"></div>
       </main>
       <center><button class="btn btn-secondary btn-block" onclick="testfunc()">ADD  IDEA</button></center>
