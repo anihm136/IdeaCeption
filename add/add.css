@@ -17,7 +17,7 @@ textarea#input {
   resize: none;
   margin: 5px;
   padding: 10px;
-  flex: 1;
+  flex-grow: 1;
   float: left;
 }
 
@@ -36,30 +36,21 @@ div#view {
   justify-content: center;
 }
 
-/* #add_idea_button { */
-/* margin: 40px 0px; */
-/* padding: 20px 60px; */
-/* border: none; */
-/* text-align: center; */
-/* font-size: 30px; */
-/* background-color: #424242; */
-/* transition: all 0.3s; */
-/* color: #80cbc4; */
-/* } */
-
 #utility {
+  flex: 1;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
 }
 
 #utility_bar {
   box-sizing: border-box;
   height: 30px;
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   justify-content: space-around;
   /* align-items: center; */
-  margin: 30px 5px -5px 5px;
+  margin: 5px 5px -5px 5px;
   padding: 0px 11px;
   text-align: center;
   background-color: #009688;
@@ -71,15 +62,33 @@ div#view {
   cursor: pointer;
 }
 
-#spacer {
-  box-sizing: border-box;
-  flex: 1;
-  margin: 30px 5px -5px 5px;
-  padding: 0px 10px;
-}
-
 .btn-block {
   background-color: #424242;
   width: 75%;
   margin: 30px auto 60px auto;
+}
+
+.title-input {
+  margin: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.title-input input {
+  text-align: center;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid;
+  width: 50%;
+  transition: border 0.3s ease;
+}
+
+.title-input input:focus {
+  border-color: #80cbc4;
+}
+
+.title-input input:focus::placeholder {
+  color: transparent;
 }
