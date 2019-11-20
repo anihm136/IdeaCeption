@@ -19,8 +19,11 @@ include("../header.php");
           <option>By Popularity</option>
         </select>
         <hr color="black"><br>
-        <div class="idea-container">
-          
+        <div class="idea-container"></div>
+        <hr color="black"><br>
+        <div class='page-container'>
+          <button class="btn btn-login" >&#8592; Previous</button>
+          <button class="btn btn-login" >Next &#8594;</button>
         </div>
         <!-- <div class="idea_template"> -->
           <!-- <img src="C:\Users\Rohit\Desktop\IdeaCeption\images\logo-dark.png" > -->
