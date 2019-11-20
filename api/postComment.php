@@ -4,20 +4,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   header("Content-type: text/plain");
 
   include_once("../backend/config/database.php");
-  include_once("../backend/models/post.php");
+  include_once("../backend/models/suggest.php");
 
   $database = new Database();
   $db = $database->connect();
 
-  $post = new Post($db);
-  session_start();
-  $temp=$_SESSION["current_user"]["name"];
+  $suggest = new Suggest($db);
 
-  $post->name = $temp;
-  $post->title = $_POST['postTitle'];
-  $post->content = $_POST['postContent'];
+  $tempa = $_POST['post_id'];
+  $tempb = $_POST['comment'];
+  $tempc = $_POST['user'];
 
-  $post->postUp();
+  $suggest->post_id = $tempa;
+  $suggest->comment = $tempb;
+  $suggest->user = $tempc;
+
+  $suggest->comment();
+
 } else {
   header("Location: ../");
 }

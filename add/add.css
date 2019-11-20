@@ -92,3 +92,9 @@ div#view {
 .title-input input:focus::placeholder {
   color: transparent;
 }
+
+.required-message {
+  width: 50%;
+  margin: 5px auto;
+  font-size: 0.8rem;
+}

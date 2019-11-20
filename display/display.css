@@ -13,53 +13,19 @@
   cursor: default;
 }
 
-textarea#input {
-  resize: none;
-  margin: 5px;
-  padding: 10px;
-  flex-grow: 1;
-  float: left;
-}
-
 div#view {
   margin: 5px;
+  margin-bottom :10px;
   padding: 10px;
-  flex: 1;
-  background-color: #aaaaaa;
+  background-color: #eeeeee;
   word-wrap: break-word;
   word-break: break-all;
-  float: left;
+  font-size: 1.2rem;
 }
 
 #submit_button {
   display: flex;
   justify-content: center;
-}
-
-#utility {
-  flex: 1;
-  display: flex;
-  /* justify-content: space-evenly; */
-  flex-direction: column;
-}
-
-#utility_bar {
-  box-sizing: border-box;
-  height: 30px;
-  /* flex: 1; */
-  display: flex;
-  justify-content: space-around;
-  /* align-items: center; */
-  margin: 5px 5px -5px 5px;
-  padding: 0px 11px;
-  text-align: center;
-  background-color: #009688;
-  color: white;
-}
-
-#utility_bar p {
-  flex: 1;
-  cursor: pointer;
 }
 
 .btn-block {
@@ -68,27 +34,32 @@ div#view {
   margin: 30px auto 60px auto;
 }
 
-.title-input {
-  margin: 5px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 20px;
+#title {
   text-align: center;
+  font-size: 3rem;
+  margin-top: 20px
 }
 
-.title-input input {
-  text-align: center;
-  font-size: 2rem;
-  border: none;
-  border-bottom: 1px solid;
-  width: 50%;
-  transition: border 0.3s ease;
+.suggestions {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
 }
 
-.title-input input:focus {
-  border-color: #80cbc4;
+.suggestions-container {
+  margin-left :5px;
+  padding: 10px
 }
 
-.title-input input:focus::placeholder {
+#suggest-input {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#suggest-input:focus::placeholder {
   color: transparent;
+}
+
+.comment {
+  padding: 10px;
 }

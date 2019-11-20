@@ -1,9 +1,17 @@
 <?php
 if (!isset($_GET['id'])) {
   header("Location: ../browse");
-} else {
-  
 }
+include_once '../backend/config/database.php';
+include_once '../backend/models/post.php';
+
+$database = new Database();
+$db = $database->connect();
+
+$post = new Post($db);
+
+$post->getPost($_GET['id']);
+
 $pagename = "display";
 include("../header.php");
 ?>
@@ -14,17 +22,21 @@ include("../header.php");
       <?php include("../sidebar.php");?>
     </div>
     <div class="col-md-10">
-      <main id="input_area">
-        <p>Title: <?php echo ?></p>
-        <div id="view"></div>
+      <main>
+        <p id="title"><?php echo "$post->title"?></p>
+        <div id="view"><?php echo nl2br($post->content)?></div>
+        <p class="suggestions">Suggestions</p>
+        <div class="suggestions-container">
+          <input id="suggest-input" class="form-control" type="text" placeholder="Add your suggestion here">
+          <center><button class="btn btn-login btn-suggest" onclick="suggestFunc()">Suggest</button></center>
+        </div>
       </main>
-      <center><button class="btn btn-secondary btn-block" onclick="testfunc()">ADD  IDEA</button></center>
     </div>
   </div>
 </div>
 
 <script src="../scripts/showdown.min.js"></script>
-<script src="../scripts/add.js"></script>
+<script src="../scripts/display.js"></script>
 
 <?php
 include("../footer.php");

@@ -53,27 +53,29 @@ document.getElementById("code").addEventListener("click", () => {
   input.selectionEnd -= 4;
 });
 
-if(sessionStorage.getItem("logged_in")==null)
-{
+if (sessionStorage.getItem("logged_in") == null) {
   $("#input_area").hide();
   $(".title-input").hide();
   $("#add_idea_btn").hide();
   $(".alert.alert-custom").show();
 }
 
-function addfunc(){
-  var title=$(".title").val();
+function addfunc() {
+  var title = $(".title").val().toProperCase();
+  if (title == "") {
+    $(".required-message").show();
+    return;
+  }
   // var post=$("#input").val();
-  var content=document.getElementById("input").value;
+  var content = document.getElementById("input").value;
   // console.log(content);
 
   var sendObj = {
-    postTitle :title,
-    postContent:content,
-
+    postTitle: title,
+    postContent: content
   };
   console.log(sendObj);
-  var target="../api/add_idea.php";
+  var target = "../api/add_idea.php";
   console.log(target);
 
   $.ajax({
@@ -81,20 +83,16 @@ function addfunc(){
     url: target,
     data: sendObj
   }).done(data => {
-    console.log(" After call"+data);
+    // console.log(" After call"+data);
     try {
-      if(typeof (JSON.parse(data))=="object"){
-        console.log("Idea added succesfully");
-      }
-      else{
-        console.log("Error");
+      if (typeof JSON.parse(data) == "object") {
+        // console.log(JSON.parse(data));
+        window.location = "../display/display.php?id=" + JSON.parse(data)["id"];
+      } else {
+        console.log("Error: Already exist");
       }
     } catch (e) {
       console.log("ERROR: " + e);
     }
-
-    // console.log(JSON.parse(data));
   });
 }
-
-

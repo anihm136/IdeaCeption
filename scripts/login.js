@@ -22,8 +22,10 @@ $("#login_form").submit(ev => {
       $("main.main_body").append(success);
       sessionStorage.setItem("logged_in", "true");
       setTimeout(() => {
-        if (getCookie("source") != null) {
-          window.location = getCookie("source");
+        if (getCookie("source") != "") {
+          let dest = getCookie("source");
+          setCookie("source", "", 0);
+          window.location = dest;
 } else {
           window.location = "../";
         }

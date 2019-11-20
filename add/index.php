@@ -11,7 +11,8 @@ include("../header.php");
   
     <div class="col-md-10">
       <div class="title-input">
-        <input type="text" name="title" class="title" placeholder="Title">
+        <input type="text" name="title" class="title" placeholder="Title" required>
+        <p class="alert alert-danger required-message" style="display:none">Please enter a title</p>
       </div>
       <div class="alert alert-custom" style="display:none">
         <p>Please login to add idea!</p>
