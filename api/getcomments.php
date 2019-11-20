@@ -5,19 +5,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   header("Content-type: text/plain");
 
   include_once("../backend/config/database.php");
-  include_once("../backend/models/user.php");
+  include_once("../backend/models/suggest.php");
 
   $database = new Database();
   $db = $database->connect();
 
-  $user = new User($db);
+  $suggest = new Suggest($db);
 
-  $user->name = $_POST['userMail'];
-  $user->email = $_POST['userMail'];
-  $user->passwd = $_POST['userPass'];
-
-  $user->userAuth();
+  $suggest->getComments($_POST['post_id']);
 } else {
-  header("Location: ../login");
+  header("Location: ../");
 }
 ?>

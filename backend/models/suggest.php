@@ -34,5 +34,18 @@ Class Suggest {
     }
   }
 
+  public function getComments($post_id){
+    $query = 'SELECT * FROM ' .$this->table. ' WHERE post_id = :post_id';
+
+    $stmt = $this->conn->prepare($query);
+    $stmt->bindParam(':post_id', $post_id);
+    $stmt->execute();
+    $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+    if ($res) {
+      echo json_encode($res);
+    }
+  }
+
 }
 ?>
