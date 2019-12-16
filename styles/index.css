@@ -1,90 +1,36 @@
-@import url("normalize.css");
+@import url("common.css");
 
-header {
-    margin-top: 20px;
-    height: 100px;
-    background: #424242;
-    padding-left: 45%;
-    line-height: 100px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-}
-
-div#corner {
-    position: absolute;
-    height: 40%;
-    width: 40%;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #212121;
-    clip-path: polygon(
-    0 0,
-    100% 0,
-    0 100%
-  );
-}
-
-div#corner > img {
-    position: relative;
-    top: calc(0.33*100%);
-    left: calc(0.22*100%);
-    transform: translate(-50%, -50%);
-}
-
-div#corner-border {
-    position: absolute;
-    height: calc(40% + 5px);
-    width: calc(40% + 5px);
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #80CBC4;
-    clip-path: polygon(
-    0 0,
-    100% 0,
-    0 100%
-  );
-}
-
-body > p {
-    margin: 70px 100px 50px 250px;
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 200%;
-}
-
-div.button {
-    box-sizing: border-box;
-    width: calc(33.33% - 24px);
-    float: left;
-    text-align: center;
-    padding: 10px;
-}
-
-div.button:hover {
-    /* background-color: gray; */
-    border: 3px solid #009688;
-}
-
-div.button > p {
-    text-align: center;
+main > p {
+  margin: 50px 15px;
+  font-size: 18px;
+  line-height: 200%;
 }
 
 div#wrapper {
-    margin-left: 250px;
-    margin-right: 100px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-footer {
-    clear: both;
-    margin-top: 250px;
-    padding: 30px;
-    text-align: center;
-    background-color: #212121;
-    color: #EEEEEE;
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #e5e5e5;
+  transition: background 0.3s;
+  margin: 0 5px 60px 5px;
+}
+
+.card:hover {
+  background-color: #ffffff;
+}
+
+button {
+  margin: auto;
 }

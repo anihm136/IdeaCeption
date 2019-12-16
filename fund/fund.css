@@ -1,0 +1,75 @@
+@import url("../styles/common.css");
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  font-family: "Nunito", sans-serif;
+}
+
+#fund .fund a {
+  color: #80cbc4;
+font-size: 24px;
+  pointer-events: none;
+  cursor: default;
+}
+
+#main_body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.fund_button {
+  background-color: #80cbc4;
+  border: none;
+  text-align: center;
+  padding: 25px 80px;
+  font-size: 40px;
+  margin: 10px;
+  margin-right: 50px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.fund_button:active {
+  transform: translateY(4px);
+}
+
+.fund_button:hover {
+  background-color: #009688;
+  color: white;
+}
+
+#fund_submit:active {
+  transform: translateY(4px);
+}
+
+#fund_submit:hover {
+  opacity: 1;
+}
+
+#fund_submit {
+  margin: 30px auto 60px auto;
+  border: none;
+  text-align: center;
+  padding: 25px 80px;
+  font-size: 25px;
+  background-color: #424242;
+  color: #80cbc4;
+  opacity: 0.95;
+}
+
+#custom_fund {
+  background-color: rgb(180, 180, 180);
+  color: black;
+  text-align: center;
+  /* cursor: auto; */
+}
+
+#custom_fund:focus {
+  background-color: rgb(220, 220, 220);
+}
+
+/* footer { */
+/* margin-top: 50px; */
+/* } */

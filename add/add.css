@@ -1,0 +1,100 @@
+@import url("../styles/common.css");
+
+#input_area {
+  display: flex;
+  align-items: stretch;
+  min-height: 70vh;
+}
+
+#add .add a {
+  color: #80cbc4;
+  font-size: 24px;
+  pointer-events: none;
+  cursor: default;
+}
+
+textarea#input {
+  resize: none;
+  margin: 5px;
+  padding: 10px;
+  flex-grow: 1;
+  float: left;
+}
+
+div#view {
+  margin: 5px;
+  padding: 10px;
+  flex: 1;
+  background-color: #aaaaaa;
+  word-wrap: break-word;
+  word-break: break-all;
+  float: left;
+}
+
+#submit_button {
+  display: flex;
+  justify-content: center;
+}
+
+#utility {
+  flex: 1;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
+}
+
+#utility_bar {
+  box-sizing: border-box;
+  height: 30px;
+  /* flex: 1; */
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin: 5px 5px -5px 5px;
+  padding: 0px 11px;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+}
+
+#utility_bar p {
+  flex: 1;
+  cursor: pointer;
+}
+
+.btn-block {
+  background-color: #424242;
+  width: 75%;
+  margin: 30px auto 60px auto;
+}
+
+.title-input {
+  margin: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.title-input input {
+  text-align: center;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid;
+  width: 50%;
+  transition: border 0.3s ease;
+}
+
+.title-input input:focus {
+  border-color: #80cbc4;
+}
+
+.title-input input:focus::placeholder {
+  color: transparent;
+}
+
+.required-message {
+  width: 50%;
+  margin: 5px auto;
+  font-size: 0.8rem;
+}

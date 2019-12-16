@@ -1,0 +1,71 @@
+@import url("../styles/common.css");
+
+.main_body {
+  display: flex;
+}
+
+footer {
+  margin-top: 50px;
+  /* margin-left: 200px; */
+}
+
+#login_details,
+#login_footer {
+  float: left;
+  margin-top: 70px;
+}
+
+#login_details {
+  flex: 2;
+  border-right: 2px solid black;
+}
+
+#login_footer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.email,
+.password {
+  width: 80%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.email:focus,
+.password:focus {
+  border-color: #80cbc4;
+}
+
+.login-button-header {
+  display: none;
+}
+
+.btn-block {
+  width: 75%;
+  margin: 1rem auto;
+  background-color: #424242;
+}
+
+.block {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.alert-success {
+  margin: auto;
+}
+
+.login-error {
+  font-size: 0.8em;
+  margin: 10px;
+}
